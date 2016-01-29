@@ -9,8 +9,15 @@ require('./models/Posts');
 require('./models/Comments');
 require('./models/Users');
 require('./config/passport');
-mongoose.connect('mongodb://root:WC5OBLfIbWNj@localhost/local');
+mongoose.connect('mongodb://cafenube:Sec03lP1nt0@ec2-54-68-110-187.us-west-2.compute.amazonaws.com/dummyDB');
 //WC5OBLfIbWNj
+//{
+//      user: "admin",
+//      pwd: "Sec03lP1nt0",
+//      user: "cafenube",
+//       pwd: "Sec03lP1nt0",
+//    }
+
 var passport = require('passport');
 
 var routes = require('./routes/index');
